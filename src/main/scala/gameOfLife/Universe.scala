@@ -1,6 +1,8 @@
 package gameOfLife
 
-class Universe {
+class Universe(position: Position) {
+  
+  def this() = this(null)
   
   def iter(): Universe = {
     new Universe
