@@ -1,0 +1,5 @@
+package gameOfLife
+
+class GOL {
+
+}
