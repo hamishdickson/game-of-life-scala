@@ -1,14 +1,11 @@
 package gameOfLife
 
-class Universe(position: Position) {
+class Universe(positions: List[Position]) {
   
-  def this() = this(null)
+  def this() = this(List())
+  def this(position: Position) = this(List(position))
   
-  def iter(): Universe = {
-    new Universe
-  }
+  def iteration(): Universe = new Universe
   
-  def cellAliveAtPosition(pos: Position) = {
-    false
-  }
+  def cellAliveAtPosition(pos: Position) = false
 }
